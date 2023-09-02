@@ -1,5 +1,14 @@
 # Olympic Data Analytics Azure End-To-End Data Engineering Project
 
+## Getting Started
+
+Before you begin working on this project, you'll need to gather the necessary datasets. The primary dataset for this project, which contains data related to the 2021 Olympics in Tokyo, can be found on Kaggle. You can download it from the following link:
+
+[2021 Olympics in Tokyo Dataset](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
+
+Please make sure to download the dataset and place it in the appropriate location for your data processing pipeline.
+
+
 ## Project Architecture
 
 To visualize the architecture of this project, please refer to our Miro board:
