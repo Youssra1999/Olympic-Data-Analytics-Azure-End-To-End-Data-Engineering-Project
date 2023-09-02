@@ -6,7 +6,6 @@ To visualize the architecture of this project, please refer to our Miro board:
 
 [![Miro Project Architecture](project_architecture.PNG)](https://miro.com/app/board/uXjVMoiTrbM=/?share_link_id=195135166585)
 
-
 ### Data Sources
 
 The project's architecture includes five primary data sources in the form of CSV files:
@@ -43,8 +42,6 @@ We create visually compelling dashboards using a combination of tools:
 - Looker Studio: For data exploration and analytics.
 - Tableau: For creating interactive and insightful dashboards.
 
-
-
 ## About Miro
 
 [Miro](https://www.miro.com/) is an online collaborative whiteboard platform that enables teams to work visually, brainstorm ideas, plan projects, and more. In the context of our project, we've used Miro to visually represent the architecture, data flows, and components involved in our Olympic Data Analytics solution. It allows for better communication and understanding of our project's design and structure.
@@ -52,6 +49,18 @@ We create visually compelling dashboards using a combination of tools:
 ## Description
 
 [Add a brief description of your project here.]
+
+## Prerequisites
+
+Before you get started with this project, make sure you have the following prerequisites in place:
+
+- **Laptop:** You'll need a laptop or computer to work on this project.
+
+- **Stable Internet Connection:** Ensure you have a stable internet connection for accessing cloud services and resources.
+
+- **Basics of Python and SQL:** Familiarity with Python and SQL will be beneficial for working with data processing and analysis tasks.
+
+- **Azure Account:** You'll need an Azure account to utilize Azure services such as Data Lake Gen2, Azure Data Factory, Azure Databricks, and Azure Synapse Analytics.
 
 ## Getting Started
 
