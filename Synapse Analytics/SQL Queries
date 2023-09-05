@@ -1,0 +1,77 @@
+-- Retrieve all athletes from a specific country 
+SELECT * FROM athletes WHERE country = 'Morocco';
+
+-- Count the number of athletes from each country and display in descending order.
+SELECT country, COUNT(*) AS athlete_count
+FROM athletes
+GROUP BY country 
+ORDER BY athlete_count DESC;
+
+-- List all unique disciplines available in the dataset.
+SELECT DISTINCT discipline FROM athletes;
+
+-- Count the number of athletes in each discipline and display in descending order.
+SELECT discipline, COUNT(*) AS athlete_count
+FROM athletes
+GROUP BY discipline
+ORDER BY athlete_count DESC;
+
+-- Find athletes with the same name and count occurrences.
+SELECT personname, COUNT(*) AS name_count
+FROM athletes
+GROUP BY personname
+HAVING COUNT(*) > 1;
+
+-- Retrieve athletes who participate in multiple disciplines.
+SELECT personname
+FROM athletes
+GROUP BY personname
+HAVING COUNT(DISTINCT discipline) > 1;
+
+-- Find the athlete with the most appearances in a specific discipline (SQL Server).
+SELECT TOP 1 discipline, personname, COUNT(*) AS appearance_count
+FROM athletes
+GROUP BY discipline, personname
+ORDER BY appearance_count DESC;
+
+-- Calculate the average number of athletes per discipline.
+SELECT AVG(athlete_count) AS avg_athletes_per_discipline
+FROM (
+    SELECT discipline, COUNT(*) AS athlete_count
+    FROM athletes
+    GROUP BY discipline
+) subquery;
+
+-- Find athletes with names containing a specific keyword (replace 'keyword' with your search term).
+SELECT personname
+FROM athletes
+WHERE personname LIKE '%a%';
+
+-- Retrieve athletes sorted by name in alphabetical order.
+SELECT personname
+FROM athletes
+ORDER BY personname ASC;
+
+--Calculate the total medals won by each country 
+Select team_country ,
+SUM(Gold) Total_Gold ,
+SUM(Silver) Total_Silver ,
+SUM(Bronze) Total_Bronze 
+FROM medals
+GROUP BY Team_Country 
+ORDER BY Total_Gold DESC;
+
+--Calculate the average number of entries by gender for each discipline:
+SELECT Discipline ,
+AVG(Female) AVG_Female,
+AVG(Male) AVG_Male
+FROM entriesgender
+GROUP BY Discipline
+
+
+
+
+
+
+
+
